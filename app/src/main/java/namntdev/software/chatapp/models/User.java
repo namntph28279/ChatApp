@@ -1,2 +1,7 @@
-package namntdev.software.chatapp.models;public class User {
+package namntdev.software.chatapp.models;
+
+import java.io.Serializable;
+
+public class User implements Serializable {
+    public String name, image, email, token, id;
 }

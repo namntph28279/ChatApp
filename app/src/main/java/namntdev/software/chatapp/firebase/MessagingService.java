@@ -13,12 +13,13 @@ public class MessagingService extends FirebaseMessagingService {
     public void onNewToken(@NonNull String token) {
         super.onNewToken(token);
         Log.d("FCM", "Token: " + token);
-        Toast.makeText(this, "token : "+ token, Toast.LENGTH_SHORT).show();
+//        Toast.makeText(this, "token : "+ token, Toast.LENGTH_SHORT).show();
     }
 
     @Override
     public void onMessageReceived(@NonNull RemoteMessage message) {
         super.onMessageReceived(message);
         Log.d("FCM", "Message: " + message.getNotification().getBody());
+
     }
 }
